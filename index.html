@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APMC FreshStock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌾 APMC FreshStock</h1>
+        <p>Smart Inventory & Expiry Tracking for Vendors</p>
+    </header>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#add-goods">Add Goods</a>
+        <a href="#inventory">Inventory</a>
+    </nav>
+
+    <main>
+        <section id="dashboard">
+            <h2>Vendor Dashboard</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Products</h3>
+                    <p>0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Expiring Soon</h3>
+                    <p>0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Expired Products</h3>
+                    <p>0</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="add-goods">
+            <h2>Add New Goods</h2>
+
+            <form>
+                <label>Product Name</label>
+                <input type="text" placeholder="e.g. Tomatoes" required>
+
+                <label>Category</label>
+                <select required>
+                    <option value="">Select category</option>
+                    <option>Fresh Produce</option>
+                    <option>Packaged Goods</option>
+                </select>
+
+                <label>Quantity</label>
+                <input type="number" min="0.01" step="any"
+                       placeholder="Enter quantity" required>
+
+                <label>Unit</label>
+                <select required>
+                    <option>Kilograms</option>
+                    <option>Grams</option>
+                    <option>Pieces</option>
+                    <option>Boxes</option>
+                    <option>Packets</option>
+                </select>
+
+                <label>Date Received</label>
+                <input type="date" required>
+
+                <label>Expiry / Expected Spoilage Date</label>
+                <input type="date" required>
+
+                <button type="button">Add Product</button>
+            </form>
+        </section>
+
+        <section id="inventory">
+            <h2>Current Inventory</h2>
+            <p>Your added products will appear here once inventory functionality is connected.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>APMC FreshStock | Helping vendors manage stock smarter.</p>
+    </footer>
+
+</body>
+</html>
