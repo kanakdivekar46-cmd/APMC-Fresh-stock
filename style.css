@@ -1,0 +1,181 @@
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8f2;
+    color: #26352a;
+    line-height: 1.6;
+}
+
+/* Website header */
+header {
+    background: linear-gradient(135deg, #164e35, #278451);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #ffffff;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    text-decoration: none;
+    color: #17623c;
+    font-weight: bold;
+    margin: 0 18px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #e69b28;
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 28px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    scroll-margin-top: 80px;
+}
+
+section h2 {
+    color: #17623c;
+    margin-bottom: 22px;
+    font-size: 25px;
+}
+
+/* Dashboard cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #edf7ef;
+    border-left: 5px solid #278451;
+    padding: 22px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    color: #526657;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #17623c;
+}
+
+/* Product form */
+form {
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd8cd;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #278451;
+    border-color: transparent;
+}
+
+button {
+    background-color: #278451;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button:hover {
+    background-color: #17623c;
+}
+
+/* Footer */
+footer {
+    background-color: #164e35;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 35px;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 650px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        margin: 5px 8px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
